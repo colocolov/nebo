@@ -1,0 +1,101 @@
+.header
+  &__container
+    display: flex
+    flex-direction: column
+    border-right: 3px solid transparent
+    padding-bottom: 100px
+  &__top
+    padding: 15px 0
+    @include fl-all
+  &__logo
+    display: flex
+    align-items: flex-end
+  &__link
+    display: inline-block
+    margin-right: 20px
+    font-family: 'Micra', sans-serif
+    @include font(400, 70, 72)
+    text-transform: uppercase
+  &__since
+    margin-bottom: 13px
+    &-sm
+      font-family: 'Micra', sans-serif
+      font-size: 20px
+      line-height: 21px
+      color: $grey
+    &-bg
+      font-family: 'Micra', sans-serif
+      font-size: 30px
+      line-height: 31px
+      color: $grey
+
+  &__slider
+    // position: relative
+    // maheight: 450
+    max-height: 450px
+    background-color: $bgc
+    width: 1240px
+    // color: $text
+    // &__container
+    //   box-sizing: border-box
+    //   width: 100%
+    //   display: flex
+    //   justify-content: center
+  &__slide
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 450px
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: rgba($black, 0.5)
+      z-index: 1
+    &-img
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      height: 450px
+    &-title
+      font-family: 'Micra', sans-serif
+      @include font(400, 36, 37)
+      color: $bgc
+      z-index: 2
+    &-album
+      position: absolute
+      bottom: -171px
+      left: 72px
+      width: 320px
+      height: 320px
+      z-index: 4
+      // border: 2px solid $bgc
+      // border-radius: 50%
+      color: $bgc
+      // border-image-slice: 1
+      // border: 5px solid $bgc
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      font-family: 'Micra', sans-serif
+      @include font(400, 36, 37)
+      &::before
+        content: ''
+        position: absolute
+        inset: -3px
+        padding: 3px
+        border-radius: 50%
+        background: linear-gradient(134.04deg, #B4BAC7 15.41%, #4E5871 85.03%)
+        mask: linear-gradient($bgc 0 0) content-box, linear-gradient($bgc 0 0)
+        mask-composite: exclude
+    &-year
+      display: block
+      font-family: 'Micra', sans-serif
+      @include font(400, 70, 72)
+      color: $dark
