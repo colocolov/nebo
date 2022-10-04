@@ -59,9 +59,9 @@ soundMute.forEach((item) => {
     let mute = item.children[0];
     let volume = item.parentNode.children[1];
     let laught = item.parentNode.children[2].children[0];
-    mute.src = "/images/icons/sprite.svg#mute-full";
+    mute.src = "./images/icons/sprite.svg#mute-full";
     volume.value = 0;
-    laught.src = "/images/icons/sprite.svg#laught";
+    laught.src = "./images/icons/sprite.svg#laught";
     audio.volume = 0;
   });
 });
@@ -72,9 +72,9 @@ soundLaught.forEach((item) => {
     let mute = item.parentNode.children[0].children[0];
     let volume = item.parentNode.children[1];
     let laught = item.children[0];
-    mute.src = "/images/icons/sprite.svg#mute";
+    mute.src = "./images/icons/sprite.svg#mute";
     volume.value = 100;
-    laught.src = "/images/icons/sprite.svg#laught-full";
+    laught.src = "./images/icons/sprite.svg#laught-full";
     audio.volume = 1;
   });
 });
@@ -87,13 +87,13 @@ soundVolume.forEach((item) => {
     let laught = item.parentNode.children[2].children[0];
     audio.volume = item.value / 100;
     if (audio.volume == 0) {
-      mute.src = "/images/icons/sprite.svg#mute-full";
-      laught.src = "/images/icons/sprite.svg#laught";
+      mute.src = "./images/icons/sprite.svg#mute-full";
+      laught.src = "./images/icons/sprite.svg#laught";
     } else if (audio.volume > 0.75) {
       laught.src = "/images/icons/sprite.svg#laught-full";
     } else {
-      mute.src = "/images/icons/sprite.svg#mute";
-      laught.src = "/images/icons/sprite.svg#laught";
+      mute.src = "./images/icons/sprite.svg#mute";
+      laught.src = "./images/icons/sprite.svg#laught";
     }
   });
 });
