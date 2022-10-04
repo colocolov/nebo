@@ -698,6 +698,163 @@ a.donate__see::before {
   display: flex;
 }
 
+.fonograms__container {
+  padding-left: 0;
+}
+.fonograms__show {
+  display: none;
+  padding-left: 65px;
+}
+.fonograms__show:not(:last-child) {
+  border-bottom: 3px solid #4E5871;
+}
+.fonograms__head {
+  max-width: 252px;
+  word-wrap: break-word;
+  margin-bottom: 42px;
+  line-height: 54px;
+}
+.fonograms__heading.accordeon__head {
+  padding-left: 65px;
+}
+
+.fonograms.active .fonograms__show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__show {
+  display: none;
+}
+.contacts__head {
+  padding-top: 35px;
+}
+.contacts__info {
+  padding-top: 35px;
+  border-left: 3px solid #4E5871;
+  padding-left: 45px;
+  width: 50%;
+  padding-bottom: 50px;
+}
+.contacts__info p:not(:last-child) {
+  margin-bottom: 20px;
+}
+.contacts__list {
+  margin-bottom: 33px;
+}
+.contacts__item:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.contacts.active .contacts__show {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.donate__container {
+  border-bottom: none;
+  background: #4E5871;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.donate__btn {
+  display: block;
+  padding: 58px 0;
+  text-transform: uppercase;
+  font-family: "Micra", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1111111111;
+  margin: 0 auto;
+}
+
+a.donate__btn {
+  color: #F6F5F0;
+}
+
+.accordeon__item {
+  overflow: hidden;
+  -webkit-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+.accordeon__name {
+  position: relative;
+  cursor: pointer;
+}
+.accordeon__name::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  background: url(../images/icons/sprite.svg#plus) no-repeat center center;
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.accordeon__content {
+  margin: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.accordeon__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+.accordeon__head {
+  padding: 35px 0;
+  color: #4E5871;
+}
+.accordeon__close {
+  position: absolute;
+  bottom: 19px;
+  right: 0;
+  text-align: right;
+  margin-top: 133px;
+}
+.accordeon__open .btn {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.active .accordeon__content {
+  opacity: 1;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.active .accordeon__title {
+  display: none;
+}
+
 .player__track {
   padding: 20px;
   border-bottom: 3px solid #4E5871;
@@ -770,83 +927,6 @@ a.donate__see::before {
   width: 40px;
   height: 40px;
   cursor: pointer;
-}
-
-.accordeon__item {
-  overflow: hidden;
-  -webkit-transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
-}
-.accordeon__name {
-  position: relative;
-  cursor: pointer;
-}
-.accordeon__name::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  right: 0;
-  -webkit-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-  background: url(../images/icons/sprite.svg#plus) no-repeat center center;
-  height: 16px;
-  width: 16px;
-  background-color: transparent;
-  cursor: pointer;
-  outline: none;
-}
-.accordeon__content {
-  margin: 0;
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  -webkit-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-.accordeon__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 100%;
-  cursor: pointer;
-}
-.accordeon__head {
-  padding: 35px 0;
-  color: #4E5871;
-}
-.accordeon__close {
-  position: absolute;
-  bottom: 19px;
-  right: 0;
-  text-align: right;
-  margin-top: 133px;
-}
-.accordeon__open .btn {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.active .accordeon__content {
-  opacity: 1;
-  max-height: -webkit-max-content;
-  max-height: -moz-max-content;
-  max-height: max-content;
-  -webkit-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-.active .accordeon__title {
-  display: none;
 }
 
 @media (min-width: 992px) {

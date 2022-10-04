@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -29,41 +29,42 @@
         </div>
       </div>
       <div class="socials">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#" class="solical__link">
-              <svg class="social__icon" aria-hidden="true">
-                <use xlink:href="images/icons/sprite.svg#phone"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="solical__link">
-              <svg class="social__icon" aria-hidden="true">
-                <use xlink:href="images/icons/sprite.svg#telegram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="solical__link">
-              <svg class="social__icon" aria-hidden="true">
-                <use xlink:href="images/icons/sprite.svg#mail"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a
-              href="https://www.youtube.com/channel/UCZd4p3YXM9UTP_j3MtaDttA"
-              target="_blank"
-              class="solical__link"
-            >
-              <svg class="social__icon" aria-hidden="true">
-                <use xlink:href="images/icons/sprite.svg#youtube"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+  <ul class="social__list">
+    <li class="social__item">
+      <a href="tel:+37369159241" class="solical__link">
+        <svg class="social__icon" aria-hidden="true">
+          <use xlink:href="images/icons/sprite.svg#phone"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social__item">
+      <a href="#" class="solical__link">
+        <svg class="social__icon" aria-hidden="true">
+          <use xlink:href="images/icons/sprite.svg#telegram"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social__item">
+      <a href="mailto:grupanebomd@gmail.com" class="solical__link">
+        <svg class="social__icon" aria-hidden="true">
+          <use xlink:href="images/icons/sprite.svg#mail"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social__item">
+      <a
+        href="https://www.youtube.com/channel/UCZd4p3YXM9UTP_j3MtaDttA"
+        target="_blank"
+        class="solical__link"
+      >
+        <svg class="social__icon" aria-hidden="true">
+          <use xlink:href="images/icons/sprite.svg#youtube"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+
     </div>
     <div class="header__slider">
       <div class="swiper-wrapper">
@@ -104,9 +105,11 @@
             <a class="menu__link" href="index.html#albums">Albums</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="">Fonograms</a>
+            <a class="menu__link" href="index.html#fonograms">Fonograms</a>
           </li>
-          <li class="menu__item"><a class="menu__link" href="">Contacts</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="index.html#contacts">Contacts</a>
+          </li>
         </ul>
       </nav>
       <button type="button" class="menu__icon">
@@ -544,6 +547,475 @@
       </div>
       <!-- </div> -->
     </div>
+  </div>
+</section>
+ <section class="fonograms accordeon__item" id="fonograms">
+  <div class="container fonograms__container">
+    <div class="accordeon__title">
+      <h2 class="heading accordeon__head fonograms__heading">Fonograms</h2>
+      <div class="accordeon__btn accordeon__open">
+        <button class="btn"></button>
+      </div>
+    </div>
+
+    <!-- second album 2018 -->
+    <div class="fonograms__show">
+      <!-- <div class="albums__wrp"> -->
+      <div class="albums__info">
+        <h2 class="heading fonograms__head">Fonograms</h2>
+        <div class="albums__img">
+          <img class="image" src="images/album/02.jpg" alt="" />
+        </div>
+        <div class="albums__name">
+          Мне есть за что благодарить Христа
+          <span>Album 2018</span>
+        </div>
+      </div>
+      <div class="albums__songs">
+        <div class="player__track">
+          <div class="player__play">
+            <img
+              class="image player__play-src"
+              src="images/icons/sprite.svg#play"
+              alt=""
+            />
+          </div>
+          <span class="player__title">Doamne, viata fara Tine n-are sens</span>
+          <audio class="player__audio" src="audio/songs/album-2/01.mp3"></audio>
+          <div class="player__sound">
+            <div class="player__sound-mute">
+              <img
+                class="image player__sound-muteicon"
+                src="images/icons/sprite.svg#mute"
+                alt=""
+              />
+            </div>
+            <input
+              class="player__sound-volume"
+              type="range"
+              step="1"
+              min="0"
+              max="100"
+              value="35"
+            />
+            <div class="player__sound-laught">
+              <img
+                class="image player__sound-laughticon"
+                src="images/icons/sprite.svg#laught"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="player__track">
+          <div class="player__play">
+            <img
+              class="image player__play-src"
+              src="images/icons/sprite.svg#play"
+              alt=""
+            />
+          </div>
+          <span class="player__title">Небо</span>
+          <audio class="player__audio" src="audio/songs/album-2/02.mp3"></audio>
+          <div class="player__sound">
+            <div class="player__sound-mute">
+              <img
+                class="image player__sound-muteicon"
+                src="images/icons/sprite.svg#mute"
+                alt=""
+              />
+            </div>
+            <input
+              class="player__sound-volume"
+              type="range"
+              step="1"
+              min="0"
+              max="100"
+              value="35"
+            />
+            <div class="player__sound-laught">
+              <img
+                class="image player__sound-laughticon"
+                src="images/icons/sprite.svg#laught"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="player__track">
+          <div class="player__play">
+            <img
+              class="image player__play-src"
+              src="images/icons/sprite.svg#play"
+              alt=""
+            />
+          </div>
+          <span class="player__title">Боже, Ты Царь всех царей</span>
+          <audio class="player__audio" src="audio/songs/album-2/03.mp3"></audio>
+          <div class="player__sound">
+            <div class="player__sound-mute">
+              <img
+                class="image player__sound-muteicon"
+                src="images/icons/sprite.svg#mute"
+                alt=""
+              />
+            </div>
+            <input
+              class="player__sound-volume"
+              type="range"
+              step="1"
+              min="0"
+              max="100"
+              value="35"
+            />
+            <div class="player__sound-laught">
+              <img
+                class="image player__sound-laughticon"
+                src="images/icons/sprite.svg#laught"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="player__track">
+          <div class="player__play">
+            <img
+              class="image player__play-src"
+              src="images/icons/sprite.svg#play"
+              alt=""
+            />
+          </div>
+          <span class="player__title">А где-то за окном</span>
+          <audio class="player__audio" src="audio/songs/album-2/04.mp3"></audio>
+          <div class="player__sound">
+            <div class="player__sound-mute">
+              <img
+                class="image player__sound-muteicon"
+                src="images/icons/sprite.svg#mute"
+                alt=""
+              />
+            </div>
+            <input
+              class="player__sound-volume"
+              type="range"
+              step="1"
+              min="0"
+              max="100"
+              value="35"
+            />
+            <div class="player__sound-laught">
+              <img
+                class="image player__sound-laughticon"
+                src="images/icons/sprite.svg#laught"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="player__track">
+          <div class="player__play">
+            <img
+              class="image player__play-src"
+              src="images/icons/sprite.svg#play"
+              alt=""
+            />
+          </div>
+          <span class="player__title">Евангелие</span>
+          <audio class="player__audio" src="audio/songs/album-2/05.mp3"></audio>
+          <div class="player__sound">
+            <div class="player__sound-mute">
+              <img
+                class="image player__sound-muteicon"
+                src="images/icons/sprite.svg#mute"
+                alt=""
+              />
+            </div>
+            <input
+              class="player__sound-volume"
+              type="range"
+              step="1"
+              min="0"
+              max="100"
+              value="35"
+            />
+            <div class="player__sound-laught">
+              <img
+                class="image player__sound-laughticon"
+                src="images/icons/sprite.svg#laught"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <a href="#" class="donate donate__see">See all</a>
+      </div>
+      <!-- </div> -->
+    </div>
+    <!-- first album 2008 -->
+    <div class="fonograms__show">
+      <!-- <div class="albums__wrp"> -->
+      <div class="albums__info">
+        <div class="albums__img">
+          <img class="image" src="images/album/01.jpg" alt="" />
+        </div>
+        <div class="albums__name">
+          Ты есть слава
+          <span>Since 2008</span>
+        </div>
+      </div>
+      <div class="albums__songs">
+        <div class="player__track">
+          <div class="player__play">
+            <img
+              class="image player__play-src"
+              src="images/icons/sprite.svg#play"
+              alt=""
+            />
+          </div>
+          <span class="player__title">Doamne, viata fara Tine n-are sens</span>
+          <audio class="player__audio" src="audio/songs/album-2/01.mp3"></audio>
+          <div class="player__sound">
+            <div class="player__sound-mute">
+              <img
+                class="image player__sound-muteicon"
+                src="images/icons/sprite.svg#mute"
+                alt=""
+              />
+            </div>
+            <input
+              class="player__sound-volume"
+              type="range"
+              step="1"
+              min="0"
+              max="100"
+              value="35"
+            />
+            <div class="player__sound-laught">
+              <img
+                class="image player__sound-laughticon"
+                src="images/icons/sprite.svg#laught"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="player__track">
+          <div class="player__play">
+            <img
+              class="image player__play-src"
+              src="images/icons/sprite.svg#play"
+              alt=""
+            />
+          </div>
+          <span class="player__title">Небо</span>
+          <audio class="player__audio" src="audio/songs/album-2/02.mp3"></audio>
+          <div class="player__sound">
+            <div class="player__sound-mute">
+              <img
+                class="image player__sound-muteicon"
+                src="images/icons/sprite.svg#mute"
+                alt=""
+              />
+            </div>
+            <input
+              class="player__sound-volume"
+              type="range"
+              step="1"
+              min="0"
+              max="100"
+              value="35"
+            />
+            <div class="player__sound-laught">
+              <img
+                class="image player__sound-laughticon"
+                src="images/icons/sprite.svg#laught"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="player__track">
+          <div class="player__play">
+            <img
+              class="image player__play-src"
+              src="images/icons/sprite.svg#play"
+              alt=""
+            />
+          </div>
+          <span class="player__title">Боже, Ты Царь всех царей</span>
+          <audio class="player__audio" src="audio/songs/album-2/03.mp3"></audio>
+          <div class="player__sound">
+            <div class="player__sound-mute">
+              <img
+                class="image player__sound-muteicon"
+                src="images/icons/sprite.svg#mute"
+                alt=""
+              />
+            </div>
+            <input
+              class="player__sound-volume"
+              type="range"
+              step="1"
+              min="0"
+              max="100"
+              value="35"
+            />
+            <div class="player__sound-laught">
+              <img
+                class="image player__sound-laughticon"
+                src="images/icons/sprite.svg#laught"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="player__track">
+          <div class="player__play">
+            <img
+              class="image player__play-src"
+              src="images/icons/sprite.svg#play"
+              alt=""
+            />
+          </div>
+          <span class="player__title">А где-то за окном</span>
+          <audio class="player__audio" src="audio/songs/album-2/04.mp3"></audio>
+          <div class="player__sound">
+            <div class="player__sound-mute">
+              <img
+                class="image player__sound-muteicon"
+                src="images/icons/sprite.svg#mute"
+                alt=""
+              />
+            </div>
+            <input
+              class="player__sound-volume"
+              type="range"
+              step="1"
+              min="0"
+              max="100"
+              value="35"
+            />
+            <div class="player__sound-laught">
+              <img
+                class="image player__sound-laughticon"
+                src="images/icons/sprite.svg#laught"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="player__track">
+          <div class="player__play">
+            <img
+              class="image player__play-src"
+              src="images/icons/sprite.svg#play"
+              alt=""
+            />
+          </div>
+          <span class="player__title">Евангелие</span>
+          <audio class="player__audio" src="audio/songs/album-2/05.mp3"></audio>
+          <div class="player__sound">
+            <div class="player__sound-mute">
+              <img
+                class="image player__sound-muteicon"
+                src="images/icons/sprite.svg#mute"
+                alt=""
+              />
+            </div>
+            <input
+              class="player__sound-volume"
+              type="range"
+              step="1"
+              min="0"
+              max="100"
+              value="35"
+            />
+            <div class="player__sound-laught">
+              <img
+                class="image player__sound-laughticon"
+                src="images/icons/sprite.svg#laught"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <a href="#" class="donate donate__see">See all</a>
+      </div>
+      <!-- </div> -->
+    </div>
+  </div>
+</section>
+
+      <section class="contacts accordeon__item" id="contacts">
+  <div class="container contacts__container">
+    <div class="accordeon__title">
+      <h2 class="heading accordeon__head">Contacts</h2>
+      <div class="accordeon__btn accordeon__open">
+        <button class="btn"></button>
+      </div>
+    </div>
+    <div class="contacts__show">
+      <h2 class="heading contacts__head">Contacts</h2>
+      <div class="contacts__info accordeon__content">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            E-mail:
+            <a href="mailto:grupanebomd@gmail.com" class="contacts__link"
+              >grupanebomd@gmail.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            tel:
+            <a href="tel:+37369159241" class="contacts__link"
+              >+373 69 159 241</a
+            >
+          </li>
+          <li class="contacts__item">MD. Chisinau</li>
+        </ul>
+        <div class="socials">
+  <ul class="social__list">
+    <li class="social__item">
+      <a href="tel:+37369159241" class="solical__link">
+        <svg class="social__icon" aria-hidden="true">
+          <use xlink:href="images/icons/sprite.svg#phone"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social__item">
+      <a href="#" class="solical__link">
+        <svg class="social__icon" aria-hidden="true">
+          <use xlink:href="images/icons/sprite.svg#telegram"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social__item">
+      <a href="mailto:grupanebomd@gmail.com" class="solical__link">
+        <svg class="social__icon" aria-hidden="true">
+          <use xlink:href="images/icons/sprite.svg#mail"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social__item">
+      <a
+        href="https://www.youtube.com/channel/UCZd4p3YXM9UTP_j3MtaDttA"
+        target="_blank"
+        class="solical__link"
+      >
+        <svg class="social__icon" aria-hidden="true">
+          <use xlink:href="images/icons/sprite.svg#youtube"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="donate">
+  <div class="container donate__container">
+    <a href="#" class="donate__btn"> Пожертвовать </a>
   </div>
 </section>
 

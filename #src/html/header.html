@@ -8,42 +8,7 @@
           <span class="header__since-bg">98'</span>
         </div>
       </div>
-      <div class="socials">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#" class="solical__link">
-              <svg class="social__icon" aria-hidden="true">
-                <use xlink:href="images/icons/sprite.svg#phone"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="solical__link">
-              <svg class="social__icon" aria-hidden="true">
-                <use xlink:href="images/icons/sprite.svg#telegram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="solical__link">
-              <svg class="social__icon" aria-hidden="true">
-                <use xlink:href="images/icons/sprite.svg#mail"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a
-              href="https://www.youtube.com/channel/UCZd4p3YXM9UTP_j3MtaDttA"
-              target="_blank"
-              class="solical__link"
-            >
-              <svg class="social__icon" aria-hidden="true">
-                <use xlink:href="images/icons/sprite.svg#youtube"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+      @include('_socials.html')
     </div>
     <div class="header__slider">
       <div class="swiper-wrapper">
@@ -84,9 +49,11 @@
             <a class="menu__link" href="index.html#albums">Albums</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="">Fonograms</a>
+            <a class="menu__link" href="index.html#fonograms">Fonograms</a>
           </li>
-          <li class="menu__item"><a class="menu__link" href="">Contacts</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="index.html#contacts">Contacts</a>
+          </li>
         </ul>
       </nav>
       <button type="button" class="menu__icon">

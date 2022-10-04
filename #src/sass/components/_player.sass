@@ -1,0 +1,48 @@
+.player
+  &__track
+    padding: 20px
+    border-bottom: 3px solid $dark
+    display: flex
+    align-items: center
+  &__play
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    border: 1px solid $dark
+    padding: 19px 18px 19px 20px
+    margin-right: 35px
+    cursor: pointer
+    transition: all 0.5s linear
+    &-src
+      transition: all 0.5s linear
+  &__title
+    width: 437px
+    margin-right: 35px
+  &__sound
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 235px
+    height: 40px
+    &-mute
+      width: 40px
+      height: 40px
+      cursor: pointer
+    &-volume
+      appearance: none
+      background: $dark
+      height: 8px
+      border-radius: 5px
+      cursor: pointer
+      &::-webkit-slider-thumb
+        appearance: none
+        width: 20px
+        height: 20px
+        background: $bgc
+        border-radius: 50%
+        cursor: pointer
+        border: 3px solid $dark
+    &-laught
+      width: 40px
+      height: 40px
+      cursor: pointer

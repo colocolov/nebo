@@ -1,0 +1,18 @@
+.fonograms
+  &__container
+    padding-left: 0
+  &__show
+    display: none
+    padding-left: 65px
+    &:not(:last-child)
+      border-bottom: 3px solid $dark
+  &__head
+    max-width: 252px
+    word-wrap: break-word
+    margin-bottom: 42px
+    line-height: 54px
+  &__heading.accordeon__head
+    padding-left: 65px
+
+.fonograms.active .fonograms__show
+  display: flex
