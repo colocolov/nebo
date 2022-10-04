@@ -1,0 +1,19 @@
+.about
+  &__show
+    display: none
+    // transition: all 0.3s linear
+  &__head
+    padding-top: 35px
+  &__info
+    padding-top: 35px
+    border-left: 3px solid $dark
+    padding-left: 45px
+    max-width: 50%
+    // padding-bottom: 286px
+    padding-bottom: 50px
+    p:not(:last-child)
+      margin-bottom: 20px
+.about.active .about__show
+  position: relative
+  display: flex
+  justify-content: space-between

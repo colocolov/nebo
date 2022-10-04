@@ -23,8 +23,31 @@
     opacity: 0
     overflow: hidden
     transition: all 0.5s ease-out
+  &__title
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    cursor: pointer
+  &__head
+    padding: 35px 0
+    color: $dark
+  &__btn
+  &__close
+    position: absolute
+    bottom: 19px
+    right: 0
+    text-align: right
+    margin-top: 133px
+  &__open
+    & .btn
+      transform: rotate(180deg)
+
+
 .active .accordeon
   &__content
     opacity: 1
     max-height: max-content
     transition: all 0.5s ease-out
+  &__title
+    display: none
