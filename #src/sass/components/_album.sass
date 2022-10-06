@@ -1,0 +1,114 @@
+.album
+  &__container
+    // border-bottom: none
+    padding-bottom: 100px
+  &__show
+    display: flex
+    margin-bottom: 100px
+    &-nm
+      margin-bottom: 0
+  &__info
+    // padding-top: 23px
+    padding-right: 20px
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__head
+    margin-bottom: 42px
+  &__heading.accordeon__head
+    padding-left: 65px
+  &__img
+    width: 610px
+    height: 450px
+    // margin-left: -19px
+    margin-bottom: 10px
+  &__name
+    font-family: 'Micra', sans-serif
+    @include font(400, 36, 37)
+    text-align: center
+    color: $dark
+    max-width: 461px
+    margin-bottom: 20px
+  &__btn
+    color: $dark
+    background-color: $grey
+    display: inline-block
+    padding: 19px 68px 19px 45px
+    // padding: 19px 0
+    // width: 100%
+    // text-align: center
+    font-family: 'Micra', sans-serif
+    @include font(700, 20, 22)
+    text-transform: uppercase
+    position: relative
+    cursor: pointer
+    text-align: center
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      right: 44px
+      width: 16px
+      height: 16px
+      background: url(../images/icons/sprite.svg#arrow-btn-light) center / cover no-repeat
+      transform: translateY(-50%)
+    &-buy
+      background-color: $dark
+      color: $bgc !important
+      width: 100%
+      text-align: center
+      padding: 31px 0
+      &::after
+        background: url(../images/icons/sprite.svg#arrow-btn-grey) center / cover no-repeat
+        right: 438px
+    &-sale
+      background-color: $dark
+      color: $bgc !important
+      // max-width: 350px
+      &::after
+        background: url(../images/icons/sprite.svg#arrow-btn-grey) center / cover no-repeat
+        // right: 438px
+  &__songs
+    width: 100%
+  &__sale
+    margin: 0 auto
+  &__price
+    text-align: center
+    margin-bottom: 30px
+  &__preprice
+    text-align: center
+    font-family: 'Micra', sans-serif
+    font-weight: 700
+  &__track
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &:not(:last-child)
+      margin-bottom: 40px
+  &__title
+    max-width: 245px
+    margin-right: auto
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+  &__buy
+    background: $grey
+    color: $text
+    padding: 18px 17px
+  &__form
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &__email
+    width: 490px
+    padding: 7px 20px 7px 5px
+    background: $bgc
+    border-bottom: 2px solid $dark
+    // border-radius: 20px
+    color: $text
+    transition: all 0.3s linear
+    cursor: pointer
+    margin-bottom: 50px
+    &::placeholder
+      color: $grey

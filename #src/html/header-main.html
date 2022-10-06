@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="container header__container header-other">
+  <div class="container header__container">
     <div class="header__top">
       <div class="header__logo">
         <a href="index.html" class="header__link">Группа небо</a>
@@ -10,8 +10,33 @@
       </div>
       @include('_socials.html')
     </div>
-
-    <!-- <div class="header__menu menu">
+    <div class="header__slider">
+      <div class="swiper-wrapper">
+        <a href="#" class="swiper-slide header__slide">
+          <div class="header__slide-img">
+            <img class="image" src="@img/slider/01.jpg" alt="" />
+          </div>
+          <h2 class="header__slide-title">
+            Мне есть за что благодарить Христа
+          </h2>
+          <div class="header__slide-album">
+            Album <span class="header__slide-year">2018</span>
+          </div>
+        </a>
+        <!-- slide -->
+        <a href="#" class="swiper-slide header__slide">
+          <div class="header__slide-img">
+            <img class="image" src="@img/slider/02.jpg" alt="" />
+          </div>
+          <h2 class="header__slide-title">Ты есть слава</h2>
+          <div class="header__slide-album">
+            Album <span class="header__slide-year">2008</span>
+          </div>
+        </a>
+        <!-- slide -->
+      </div>
+    </div>
+    <div class="header__menu menu">
       <nav class="menu__body">
         <ul class="menu__list">
           <li class="menu__item">
@@ -36,6 +61,6 @@
         <span></span>
         <span></span>
       </button>
-    </div> -->
+    </div>
   </div>
 </header>

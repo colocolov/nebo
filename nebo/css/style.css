@@ -165,6 +165,19 @@ input {
   -o-object-fit: cover;
   object-fit: cover;
 }
+.image-overlay {
+  position: relative;
+}
+.image-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+}
 
 .logo--header {
   height: 50px;
@@ -256,6 +269,10 @@ a.donate__see::before {
   flex-direction: column;
   border-right: 3px solid transparent;
   padding-bottom: 100px;
+}
+.header-other {
+  padding-bottom: 0;
+  border-bottom: none;
 }
 .header__top {
   padding: 15px 0;
@@ -661,17 +678,6 @@ a.donate__see::before {
   height: 260px;
   margin-left: -19px;
   margin-bottom: 10px;
-  position: relative;
-}
-.albums__img::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: inline-block;
-  background: rgba(0, 0, 0, 0.5);
 }
 .albums__name {
   margin-left: -19px;
@@ -730,6 +736,10 @@ a.donate__see::before {
 .contacts__head {
   padding-top: 35px;
 }
+.contacts__head-other {
+  color: #4E5871;
+  padding-top: 100px;
+}
 .contacts__info {
   padding-top: 35px;
   border-left: 3px solid #4E5871;
@@ -740,11 +750,23 @@ a.donate__see::before {
 .contacts__info p:not(:last-child) {
   margin-bottom: 20px;
 }
+.contacts__info-other {
+  padding-top: 100px;
+  border-left: none;
+}
 .contacts__list {
   margin-bottom: 33px;
 }
 .contacts__item:not(:last-child) {
   margin-bottom: 23px;
+}
+.contacts__wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .contacts.active .contacts__show {
@@ -760,9 +782,6 @@ a.donate__see::before {
 .donate__container {
   border-bottom: none;
   background: #4E5871;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 .donate__btn {
   display: block;
@@ -777,6 +796,233 @@ a.donate__see::before {
 
 a.donate__btn {
   color: #F6F5F0;
+  width: 100%;
+  text-align: center;
+}
+
+.album__container {
+  padding-bottom: 100px;
+}
+.album__show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+}
+.album__show-nm {
+  margin-bottom: 0;
+}
+.album__info {
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.album__head {
+  margin-bottom: 42px;
+}
+.album__heading.accordeon__head {
+  padding-left: 65px;
+}
+.album__img {
+  width: 610px;
+  height: 450px;
+  margin-bottom: 10px;
+}
+.album__name {
+  font-family: "Micra", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.0277777778;
+  text-align: center;
+  color: #4E5871;
+  max-width: 461px;
+  margin-bottom: 20px;
+}
+.album__btn {
+  color: #4E5871;
+  background-color: #B4BAC7;
+  display: inline-block;
+  padding: 19px 68px 19px 45px;
+  font-family: "Micra", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+.album__btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 44px;
+  width: 16px;
+  height: 16px;
+  background: url(../images/icons/sprite.svg#arrow-btn-light) center/cover no-repeat;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.album__btn-buy {
+  background-color: #4E5871;
+  color: #F6F5F0 !important;
+  width: 100%;
+  text-align: center;
+  padding: 31px 0;
+}
+.album__btn-buy::after {
+  background: url(../images/icons/sprite.svg#arrow-btn-grey) center/cover no-repeat;
+  right: 438px;
+}
+.album__btn-sale {
+  background-color: #4E5871;
+  color: #F6F5F0 !important;
+}
+.album__btn-sale::after {
+  background: url(../images/icons/sprite.svg#arrow-btn-grey) center/cover no-repeat;
+}
+.album__songs {
+  width: 100%;
+}
+.album__sale {
+  margin: 0 auto;
+}
+.album__price {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.album__preprice {
+  text-align: center;
+  font-family: "Micra", sans-serif;
+  font-weight: 700;
+}
+.album__track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.album__track:not(:last-child) {
+  margin-bottom: 40px;
+}
+.album__title {
+  max-width: 245px;
+  margin-right: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.album__buy {
+  background: #B4BAC7;
+  color: #4E5871;
+  padding: 18px 17px;
+}
+.album__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.album__email {
+  width: 490px;
+  padding: 7px 20px 7px 5px;
+  background: #F6F5F0;
+  border-bottom: 2px solid #4E5871;
+  color: #4E5871;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+.album__email::-webkit-input-placeholder {
+  color: #B4BAC7;
+}
+.album__email::-moz-placeholder {
+  color: #B4BAC7;
+}
+.album__email:-ms-input-placeholder {
+  color: #B4BAC7;
+}
+.album__email::-ms-input-placeholder {
+  color: #B4BAC7;
+}
+.album__email::placeholder {
+  color: #B4BAC7;
+}
+
+.recomend__container {
+  padding: 100px 65px;
+}
+.recomend__head {
+  margin-bottom: 20px;
+  color: #4E5871;
+}
+.recomend__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.recomend__album {
+  position: relative;
+  width: 610px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 75px;
+}
+.recomend__img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.recomend__title {
+  color: #F6F5F0;
+  text-align: center;
+  font-family: "Micra", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.0277777778;
 }
 
 .accordeon__item {

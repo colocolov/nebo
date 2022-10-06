@@ -4,6 +4,9 @@
     // transition: all 0.3s linear
   &__head
     padding-top: 35px
+    &-other
+      color: $dark
+      padding-top: 100px
   &__info
     padding-top: 35px
     border-left: 3px solid $dark
@@ -13,11 +16,18 @@
     padding-bottom: 50px
     p:not(:last-child)
       margin-bottom: 20px
+    &-other
+      padding-top: 100px
+      border-left: none
   &__list
     margin-bottom: 33px
   &__item
     &:not(:last-child)
       margin-bottom: 23px
+  &__wrp
+    display: flex
+    justify-content: space-between
+    // padding: 100px 0
 .contacts.active .contacts__show
   position: relative
   display: flex
