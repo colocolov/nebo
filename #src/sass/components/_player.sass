@@ -4,6 +4,7 @@
     border-bottom: 3px solid $dark
     display: flex
     align-items: center
+    justify-content: space-between
   &__play
     width: 60px
     height: 60px
@@ -13,27 +14,33 @@
     margin-right: 35px
     cursor: pointer
     transition: all 0.5s linear
+    flex-shrink: 0
     &-src
       transition: all 0.5s linear
   &__title
-    width: 437px
-    margin-right: 35px
+    max-width: 437px
+    margin-right: auto
   &__sound
     display: flex
     align-items: center
     justify-content: space-between
+    flex-shrink: 0
     width: 235px
     height: 40px
+    margin-left: 7px
     &-mute
       width: 40px
       height: 40px
       cursor: pointer
+      flex-shrink: 0
     &-volume
       appearance: none
       background: $dark
       height: 8px
       border-radius: 5px
       cursor: pointer
+      margin: 0 7px
+      width: 55%
       &::-webkit-slider-thumb
         appearance: none
         width: 20px
@@ -43,6 +50,7 @@
         cursor: pointer
         border: 3px solid $dark
     &-laught
+      flex-shrink: 0
       width: 40px
       height: 40px
       cursor: pointer
