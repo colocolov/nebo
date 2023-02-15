@@ -1,12 +1,66 @@
 @media ( max-width:768px )
   body
+    font-size: 18px
+    line-height: 1.2
     &._lock
-      overflow: hidden
+      // overflow: hidden
+
+  .heading
+    font-size: 36px
+    line-height: 1.2
+  .btn
+    width: 80px
+    height: 80px
+  .donate__btn
+    padding: 24px 0
+    font-size: 32px
 
   .header
-    position: fixed
-    top: 0
-    left: 0
-    width: 100%
-    z-index: 7
-    background-color: $black
+    // position: fixed
+    // top: 0
+    // left: 0
+    // width: 100%
+    // z-index: 7
+    // background-color: $black
+
+
+  .header__link
+    font-size: 24px
+  .header__socials
+    display: block !important
+    z-index: 21
+  .header__since
+    display: none
+    overflow: hidden
+    width: 1px
+  .header__slider
+    max-height: none
+    // margin: 17px
+  .header__slide
+    flex-direction: column
+    height: auto
+  .header__slide-album
+    z-index: 1
+    bottom: 0px
+    position: relative
+    color: $grey
+  .header__slide-title
+    display: flex
+    align-items: center
+    height: 450px
+    margin-bottom: 16px
+    margin-left: 0
+    align-self: auto
+  .header__slide-year
+    color: $dark
+
+  .socials
+    display: none
+
+  .about.active .about__show
+    flex-direction: column
+  .about__head
+    border-left: 3px solid #4E5871
+    padding-left: 45px
+  .about__info
+    max-width: none
