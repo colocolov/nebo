@@ -29,6 +29,21 @@
   .header__socials
     display: block !important
     z-index: 21
+    & .social__list
+      // flex-direction: column
+      align-items: flex-end
+      justify-content: flex-end
+    & .social__item
+      width: 35px
+      height: 35px
+      // margin-right: 0
+      &:not(:last-child)
+        margin-right: 40px
+    & .social__icon
+      width: 35px
+      height: 35px
+      display: block
+      stroke: $bgc
   .header__since
     display: none
     overflow: hidden
@@ -57,10 +72,32 @@
   .socials
     display: none
 
-  .about.active .about__show
+  .about.active .about__show,
+  .contacts.active .contacts__show
     flex-direction: column
-  .about__head
+  .about__head,
+  .contacts__head
     border-left: 3px solid #4E5871
     padding-left: 45px
   .about__info
     max-width: none
+  .contacts__info
+    width: auto
+
+  .header-other
+    padding-bottom: 0
+  .header-other .menu__body._active
+    display: block
+
+  .contacts__head-other
+    padding-left: 0
+    border: none
+
+  .recomend__items
+    flex-direction: column
+  .recomend__album
+    // flex: 1 1 100%
+    width: 100%
+    flex: auto
+    &:not(:last-child)
+      margin-bottom: 40px

@@ -47,11 +47,11 @@
       content: ''
       position: absolute
       top: 50%
-      right: 44px
+      left: 50%
+      transform: translate(111px, -9px)
       width: 16px
       height: 16px
       background: url(../images/icons/sprite.svg#arrow-btn-light) center / cover no-repeat
-      transform: translateY(-50%)
     &-buy
       background-color: $dark
       color: $bgc !important
@@ -60,7 +60,7 @@
       padding: 31px 0
       &::after
         background: url(../images/icons/sprite.svg#arrow-btn-grey) center / cover no-repeat
-        right: 438px
+        transform: translate(165px, -9px)
     &-sale
       background-color: $dark
       color: $bgc !important
@@ -68,6 +68,13 @@
       &::after
         background: url(../images/icons/sprite.svg#arrow-btn-grey) center / cover no-repeat
         // right: 438px
+        transform: translate(124px, -8px)
+    &-get
+      background-color: $dark
+      color: $bgc !important
+      &::after
+        background: url(../images/icons/sprite.svg#arrow-btn-grey) center / cover no-repeat
+        transform: translate(153px, -8px)
   &__songs
     width: 100%
   &__sale

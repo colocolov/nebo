@@ -242,13 +242,13 @@ a.donate__see::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 65%;
+  left: 50%;
+  -webkit-transform: translate(122px, -14px);
+  -ms-transform: translate(122px, -14px);
+  transform: translate(122px, -14px);
   width: 28px;
   height: 28px;
   background: url(../images/icons/sprite.svg#arrow-btn) center/cover no-repeat;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 
 .unvisible {
@@ -273,6 +273,9 @@ a.donate__see::before {
 .header-other {
   padding-bottom: 0;
   border-bottom: none;
+}
+.header-other .menu__body {
+  display: none;
 }
 .header__top {
   padding: 15px 0;
@@ -450,7 +453,7 @@ a.donate__see::before {
     width: 100%;
     height: 100%;
     padding: 150px 30px 50px 70px;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(78, 88, 113, 0.97);
     overflow: auto;
     -webkit-transition: right 0.5s ease 0s;
     -o-transition: right 0.5s ease 0s;
@@ -464,7 +467,7 @@ a.donate__see::before {
     right: -100%;
     width: 100%;
     height: 116px;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(78, 88, 113, 0.97);
     -webkit-transition: right 0.5s ease 0s;
     -o-transition: right 0.5s ease 0s;
     transition: right 0.5s ease 0s;
@@ -497,9 +500,15 @@ a.donate__see::before {
 }
 @media (max-width: 768px) {
   .menu__list {
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 50px;
   }
 }
 .menu__item {
@@ -532,7 +541,7 @@ a.donate__see::before {
   .menu__item {
     margin-bottom: 40px;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 32px;
     -webkit-writing-mode: unset;
     -ms-writing-mode: unset;
     writing-mode: unset;
@@ -542,13 +551,15 @@ a.donate__see::before {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    height: auto;
+    color: #F6F5F0;
   }
   .menu__item:last-child {
     border-left: none;
   }
   .menu__item:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 }
 .menu__icon {
@@ -588,7 +599,12 @@ a.donate__see::before {
   top: auto;
   bottom: 0;
 }
+.menu__icon._active {
+  top: 25px;
+  right: 15px;
+}
 .menu__icon._active span {
+  background-color: #F6F5F0;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
@@ -875,13 +891,13 @@ a.donate__btn {
   content: "";
   position: absolute;
   top: 50%;
-  right: 44px;
+  left: 50%;
+  -webkit-transform: translate(111px, -9px);
+  -ms-transform: translate(111px, -9px);
+  transform: translate(111px, -9px);
   width: 16px;
   height: 16px;
   background: url(../images/icons/sprite.svg#arrow-btn-light) center/cover no-repeat;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 .album__btn-buy {
   background-color: #4E5871;
@@ -892,7 +908,9 @@ a.donate__btn {
 }
 .album__btn-buy::after {
   background: url(../images/icons/sprite.svg#arrow-btn-grey) center/cover no-repeat;
-  right: 438px;
+  -webkit-transform: translate(165px, -9px);
+  -ms-transform: translate(165px, -9px);
+  transform: translate(165px, -9px);
 }
 .album__btn-sale {
   background-color: #4E5871;
@@ -900,6 +918,19 @@ a.donate__btn {
 }
 .album__btn-sale::after {
   background: url(../images/icons/sprite.svg#arrow-btn-grey) center/cover no-repeat;
+  -webkit-transform: translate(124px, -8px);
+  -ms-transform: translate(124px, -8px);
+  transform: translate(124px, -8px);
+}
+.album__btn-get {
+  background-color: #4E5871;
+  color: #F6F5F0 !important;
+}
+.album__btn-get::after {
+  background: url(../images/icons/sprite.svg#arrow-btn-grey) center/cover no-repeat;
+  -webkit-transform: translate(153px, -8px);
+  -ms-transform: translate(153px, -8px);
+  transform: translate(153px, -8px);
 }
 .album__songs {
   width: 100%;
@@ -1018,6 +1049,12 @@ a.donate__btn {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 0 75px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
+}
+.recomend__album:not(:last-child) {
+  margin-right: 20px;
 }
 .recomend__img {
   z-index: -1;
@@ -1232,8 +1269,50 @@ a.donate__btn {
   .albums__name {
     margin-left: 0;
   }
-  a.donate__see::before {
-    left: 66.5%;
+  .album__info,
+  .album__songs {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+  }
+  .album__img {
+    max-width: 610px;
+    width: auto;
+    height: auto;
+  }
+  .recomend__container {
+    padding: 100px 40px;
+  }
+  .header-other,
+  .album__container,
+  .recomend__container,
+  .contacts-other {
+    margin-left: 20px;
+  }
+  .album__container-get {
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 1250px) {
+  .album__track {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  .album__buy {
+    display: block;
+    -ms-flex-item-align: end;
+    -ms-grid-row-align: end;
+    align-self: end;
+    margin-left: 15px;
+  }
+  .album__title {
+    overflow: auto;
+    -o-text-overflow: unset;
+    text-overflow: unset;
+    max-width: none;
   }
 }
 @media (max-width: 1200px) {
@@ -1255,6 +1334,12 @@ a.donate__btn {
   .fonograms__show {
     padding-left: 20px;
   }
+  .recomend__container {
+    padding: 100px 40px;
+  }
+  .album__container-get {
+    padding-bottom: 100px;
+  }
 }
 @media (max-width: 1150px) {
   .header__link {
@@ -1263,13 +1348,13 @@ a.donate__btn {
   .header__slide-album {
     left: 30px;
   }
-  a.donate__see::before {
-    left: 68%;
-  }
 }
 @media (max-width: 1100px) {
   .header__link {
     font-size: 50px;
+  }
+  .header__since {
+    margin-bottom: 3px;
   }
   .header__slide-album {
     left: 20px;
@@ -1284,24 +1369,22 @@ a.donate__btn {
   .player__sound {
     width: 190px;
   }
-  a.donate__see::before {
-    left: 70%;
-  }
-}
-@media (max-width: 1050px) {
-  a.donate__see::before {
-    left: 71%;
+  .recomend__album {
+    padding: 0 40px;
   }
 }
 @media (max-width: 1000px) {
   .header__slide-album {
     left: 10px;
   }
-  a.donate__see::before {
-    left: 72%;
-  }
 }
 @media (max-width: 992px) {
+  .header__link {
+    font-size: 38px;
+  }
+  .header__since-bg {
+    font-size: 20px;
+  }
   .header__slide-album {
     z-index: 1;
     bottom: 10px;
@@ -1352,6 +1435,74 @@ a.donate__btn {
   .albums__name span {
     color: #B4BAC7;
   }
+  .header-other {
+    padding-bottom: 30px;
+  }
+  .header-other .header__link {
+    margin-right: 10px;
+  }
+  .album__container {
+    padding-left: 0;
+  }
+  .album__songs {
+    padding-left: 20px;
+  }
+  .album__show {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .album__info {
+    position: relative;
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+  .album__info .album__btn {
+    display: none;
+    overflow: hidden;
+    width: 0;
+  }
+  .album__img {
+    max-width: none;
+    width: 100%;
+    height: 450px;
+    margin-bottom: 0;
+  }
+  .album__name {
+    position: absolute;
+    bottom: 0;
+    color: #F6F5F0;
+    text-align: left;
+    -ms-flex-item-align: start;
+    -ms-grid-row-align: start;
+    align-self: start;
+    margin-left: 20px;
+  }
+  .recomend__container {
+    padding: 50px 20px;
+  }
+  .recomend__title {
+    font-size: 26px;
+  }
+  .contacts__wrp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .contacts__head-other {
+    padding-top: 40px;
+  }
+  .contacts__info-other {
+    padding: 50px 0;
+  }
+  .album__btn-sale {
+    background-color: #B4BAC7;
+  }
+  .album__btn-sale::after {
+    background: url(../images/icons/sprite.svg#arrow-btn) center/cover no-repeat;
+  }
 }
 @media (max-width: 768px) {
   body {
@@ -1376,6 +1527,27 @@ a.donate__btn {
   .header__socials {
     display: block !important;
     z-index: 21;
+  }
+  .header__socials .social__list {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  .header__socials .social__item {
+    width: 35px;
+    height: 35px;
+  }
+  .header__socials .social__item:not(:last-child) {
+    margin-right: 40px;
+  }
+  .header__socials .social__icon {
+    width: 35px;
+    height: 35px;
+    display: block;
+    stroke: #F6F5F0;
   }
   .header__since {
     display: none;
@@ -1418,18 +1590,195 @@ a.donate__btn {
   .socials {
     display: none;
   }
-  .about.active .about__show {
+  .about.active .about__show,
+  .contacts.active .contacts__show {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .about__head {
+  .about__head,
+  .contacts__head {
     border-left: 3px solid #4E5871;
     padding-left: 45px;
   }
   .about__info {
     max-width: none;
+  }
+  .contacts__info {
+    width: auto;
+  }
+  .header-other {
+    padding-bottom: 0;
+  }
+  .header-other .menu__body._active {
+    display: block;
+  }
+  .contacts__head-other {
+    padding-left: 0;
+    border: none;
+  }
+  .recomend__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .recomend__album {
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+  }
+  .recomend__album:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .header__slide-img {
+    height: 375px;
+  }
+  .header__slide-title {
+    height: 375px;
+    font-size: 28px;
+  }
+  .header__slide-album {
+    height: 175px;
+    width: 175px;
+    font-size: 22px;
+  }
+  .header__slide-year {
+    font-size: 32px;
+  }
+  .player__track {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .player__sound {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 0 24%;
+    margin-top: 12px;
+  }
+  a.donate__see {
+    font-size: 32px;
+  }
+  a.donate__see::before {
+    -webkit-transform: translate(107px, -12px);
+    -ms-transform: translate(107px, -12px);
+    transform: translate(107px, -12px);
+    width: 26px;
+    height: 26px;
+  }
+  .donate__btn {
+    font-size: 26px;
+  }
+  .album__name {
+    font-size: 28px;
+  }
+  .album__img {
+    height: 350px;
+  }
+  .album__track {
+    border-bottom: 2px solid #4E5871;
+    padding-bottom: 15px;
+    margin-left: -20px;
+  }
+  .album__track:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .album__title {
+    width: 65%;
+    white-space: unset;
+  }
+  .album__buy {
+    margin-right: auto;
+    margin-top: 24px;
+  }
+  .album__show {
+    margin-bottom: 0;
+  }
+  .album__sale {
+    margin-bottom: 80px;
+  }
+  .player__play {
+    margin-left: 15px;
+  }
+  .album__container-get {
+    padding-bottom: 0px;
+  }
+}
+@media (max-width: 480px) {
+  .heading {
+    font-size: 30px;
+    padding-left: 15px;
+  }
+  .btn {
+    width: 50px;
+    height: 50px;
+  }
+  .accordeon__content {
+    padding-left: 15px;
+  }
+  .header__slide-img {
+    height: 315px;
+  }
+  .header__slide-title {
+    height: 315px;
+    font-size: 24px;
+  }
+  .albums__img {
+    height: 260px;
+  }
+  .player__play {
+    margin-right: 15px;
+    width: 45px;
+    height: 45px;
+    padding: 12px 11px 12px 12px;
+  }
+  .player__title {
+    max-width: 74%;
+  }
+  .player__sound {
+    padding: 0 4%;
+  }
+  a.donate__see {
+    font-size: 26px;
+  }
+  a.donate__see::before {
+    -webkit-transform: translate(90px, -11px);
+    -ms-transform: translate(90px, -11px);
+    transform: translate(90px, -11px);
+    width: 22px;
+    height: 22px;
+  }
+  .donate__btn {
+    font-size: 20px;
+  }
+  .album__img {
+    height: 250px;
+  }
+  .album__name {
+    font-size: 22px;
+  }
+  .recomend__album {
+    height: 260px;
+  }
+  .recomend__title {
+    font-size: 22px;
+  }
+  .album__btn-buy {
+    font-size: 18px;
+    padding: 31px 40px;
+  }
+  .album__btn-buy::after,
+  .album__btn-get::after {
+    background-image: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
