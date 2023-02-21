@@ -1254,23 +1254,23 @@ a.donate__btn {
     padding-bottom: 70px;
   }
   .albums__container,
-  .fonograms__container {
+.fonograms__container {
     padding-left: 0;
   }
   .albums__heading.accordeon__head,
-  .fonograms__heading.accordeon__head {
+.fonograms__heading.accordeon__head {
     padding-left: 40px;
   }
   .albums__show,
-  .fonograms__show {
+.fonograms__show {
     padding-left: 40px;
   }
   .albums__img,
-  .albums__name {
+.albums__name {
     margin-left: 0;
   }
   .album__info,
-  .album__songs {
+.album__songs {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 50%;
     flex: 1 1 50%;
@@ -1284,9 +1284,9 @@ a.donate__btn {
     padding: 100px 40px;
   }
   .header-other,
-  .album__container,
-  .recomend__container,
-  .contacts-other {
+.album__container,
+.recomend__container,
+.contacts-other {
     margin-left: 20px;
   }
   .album__container-get {
@@ -1323,15 +1323,15 @@ a.donate__btn {
     padding-bottom: 70px;
   }
   .albums__container,
-  .fonograms__container {
+.fonograms__container {
     padding-left: 0;
   }
   .albums__heading.accordeon__head,
-  .fonograms__heading.accordeon__head {
+.fonograms__heading.accordeon__head {
     padding-left: 20px;
   }
   .albums__show,
-  .fonograms__show {
+.fonograms__show {
     padding-left: 20px;
   }
   .recomend__container {
@@ -1403,7 +1403,7 @@ a.donate__btn {
     margin-left: 0;
   }
   .albums.active .albums__show,
-  .fonograms.active .fonograms__show {
+.fonograms.active .fonograms__show {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1591,14 +1591,14 @@ a.donate__btn {
     display: none;
   }
   .about.active .about__show,
-  .contacts.active .contacts__show {
+.contacts.active .contacts__show {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
   .about__head,
-  .contacts__head {
+.contacts__head {
     border-left: 3px solid #4E5871;
     padding-left: 45px;
   }
@@ -1777,7 +1777,7 @@ a.donate__btn {
     padding: 31px 40px;
   }
   .album__btn-buy::after,
-  .album__btn-get::after {
+.album__btn-get::after {
     background-image: none;
   }
 }
