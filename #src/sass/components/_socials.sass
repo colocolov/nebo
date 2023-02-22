@@ -1,12 +1,24 @@
+
+.socials
+  display: flex
+  flex: 1 0 20%
+  margin-left: 25px
 .social
   &__list
     display: flex
     align-items: center
+    // align-content: space-between
+    flex-wrap: wrap
+    justify-content: flex-end
+    height: 100%
+    // flex-shrink: 1
   &__item
+    // flex-wrap: wrap
     width: 25px
     height: 25px
-    &:not(:last-child)
-      margin-right: 30px
+    // margin-bottom: 10px
+    &:not(:first-child)
+      margin-left: 30px
   &__icon
     width: 25px
     height: 25px
@@ -14,3 +26,8 @@
     stroke: $dark
     stroke-width: 2
     transition: stroke 0.3s linear
+    &-music
+      stroke: none
+      stroke-width: 0
+      fill: $dark
+      transition: fill 0.3s linear

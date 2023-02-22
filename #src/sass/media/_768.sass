@@ -15,15 +15,6 @@
     padding: 24px 0
     font-size: 32px
 
-  .header
-    // position: fixed
-    // top: 0
-    // left: 0
-    // width: 100%
-    // z-index: 7
-    // background-color: $black
-
-
   .header__link
     font-size: 24px
   .header__socials
@@ -36,14 +27,17 @@
     & .social__item
       width: 35px
       height: 35px
-      // margin-right: 0
-      &:not(:last-child)
-        margin-right: 40px
+      margin-bottom: 35px
+      &:not(:first-child)
+        margin-left: 40px
     & .social__icon
       width: 35px
       height: 35px
       display: block
       stroke: $bgc
+    & .social__icon-music
+      stroke: none
+      fill: $bgc
   .header__since
     display: none
     overflow: hidden
