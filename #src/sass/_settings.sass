@@ -5,6 +5,10 @@ body
   @extend %body
   background-color: $bgc
   color: $text
+  &._lock
+    overflow: hidden!important
+    height: 100%!important
+
 
 html,
 body
@@ -23,6 +27,17 @@ input
   flex-direction: column
   min-height: 100%
   overflow: hidden
+  // &._active
+  //   position: relative
+  //   &::before
+  //     position: absolute
+  //     content: ''
+  //     top: 0
+  //     left: 0
+  //     height: 100%
+  //     width: 100%
+  //     background-color: rgba($grey, .95)
+  //     z-index: 3
 
 .main
   /*  flex-grow - увеличиваться в размере: 0 зап-т, 1 раз-т

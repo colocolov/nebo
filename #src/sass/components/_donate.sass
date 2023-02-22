@@ -2,6 +2,7 @@
   &__container
     border-bottom: none
     background: $dark
+    position: relative
   &__btn
     display: block
     padding: 58px 0
@@ -14,3 +15,55 @@ a.donate__btn
   color: $bgc
   width: 100%
   text-align: center
+.donate__btn
+  &-select
+    // height: 0
+    display: none
+    transition: all 0.5s ease
+    // opacity: 0
+    // visibility: hidden
+    &._active
+      @include fl-all
+      // z-index: 11
+      position: absolute
+      // visibility: visible
+      // opacity: 1
+      padding: 30px
+      top: 0
+      left: 50%
+      // content: ''
+      width: 550px
+      height: auto
+      border: 2px solid $dark
+      border-radius: 10px
+      background-color: $bgc
+      z-index: 2
+      transform: translate(-50%, -80%)
+      transition: all 0.3s ease-out
+      &::before
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translate(-50%, 9px) rotate(-45deg)
+        border-bottom: 2px solid $dark
+        border-left: 2px solid $dark
+        content: ''
+        width: 14px
+        height: 14px
+        background-color: $bgc
+  & a
+    flex: 0 1 45%
+    column-gap: 20px
+
+
+    // &._active
+    // position: relative
+    // &::before
+    //   position: absolute
+    //   content: ''
+    //   top: 0
+    //   left: 0
+    //   height: 100%
+    //   width: 100%
+    //   background-color: rgba($grey, .95)
+    //   z-index: 3
