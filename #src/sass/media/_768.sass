@@ -14,6 +14,16 @@
   .donate__btn
     padding: 24px 0
     font-size: 32px
+    &-select._active
+      transform: translate(-50%, -94%)
+
+  .about__container,
+  .contacts__container
+    padding-left: 0
+    border-left: 0
+    & .accordeon__head
+      border-left: 3px solid $dark
+      padding-left: 20px
 
   .header__link
     font-size: 24px
@@ -72,9 +82,10 @@
   .about__head,
   .contacts__head
     border-left: 3px solid #4E5871
-    padding-left: 45px
+    padding-left: 20px
   .about__info
     max-width: none
+    padding-left: 20px
   .contacts__info
     width: auto
 
@@ -95,3 +106,6 @@
     flex: auto
     &:not(:last-child)
       margin-bottom: 40px
+
+  .donate__see::before
+    display: none

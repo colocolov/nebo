@@ -1,7 +1,7 @@
 // accordeon
 document.addEventListener("DOMContentLoaded", () => {
   const accordeons = document.querySelectorAll(".accordeon__item");
-  const accordeonBtn = document.querySelectorAll(".accordeon__btn");
+  const accordeonBtn = document.querySelectorAll(".accordeon__title");
   const navLink = document.querySelectorAll(".menu__item");
 
   accordeonBtn.forEach((el) => {
@@ -13,13 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
       // const content = self.querySelector(".accordeon__decription");
 
       for (let i = 0, parent; (parent = accordeons[i]); i++) {
+        console.log(parent);
         parent.classList.remove("active");
         parent.onclick = function (e) {
+          this.classList.toggle("active");
           // console.log(e.target.className + "--");
           if (e.target.className == "btn") {
             // alert(this.className);
             // console.log(this);
-            this.classList.toggle("active");
           }
         };
       }
