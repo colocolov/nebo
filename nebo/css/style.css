@@ -1197,6 +1197,7 @@ a.donate__btn {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
+  cursor: pointer;
 }
 .accordeon__head {
   padding: 35px 0;
@@ -1438,7 +1439,7 @@ a.donate__btn {
   }
   .contacts__container .accordeon__head,
 .contacts__head {
-    padding-left: 20px;
+    padding-left: 0;
   }
 }
 @media (max-width: 1150px) {
@@ -1593,6 +1594,7 @@ a.donate__btn {
   }
   .contacts__head-other {
     padding-top: 40px;
+    padding-left: 0;
   }
   .contacts__info-other {
     padding: 50px 0;
@@ -1616,6 +1618,9 @@ a.donate__btn {
   .social__item {
     margin-bottom: 5px;
     margin-top: 5px;
+  }
+  .socials-footer {
+    margin-left: 0;
   }
 }
 @media (max-width: 768px) {
@@ -1721,8 +1726,16 @@ a.donate__btn {
   .header__slide-year {
     color: #4E5871;
   }
-  .socials {
-    display: none;
+  .header-other {
+    padding-bottom: 0;
+  }
+  .header-other .menu__body._active {
+    display: block;
+  }
+  .socials-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .about.active .about__show,
 .contacts.active .contacts__show {
@@ -1740,18 +1753,23 @@ a.donate__btn {
     max-width: none;
     padding-left: 20px;
   }
+  .album__btn-buy::after {
+    display: none;
+  }
   .contacts__info {
     width: auto;
+    padding-left: 20px;
   }
-  .header-other {
-    padding-bottom: 0;
-  }
-  .header-other .menu__body._active {
-    display: block;
+  .contacts__info-other {
+    padding-left: 0;
   }
   .contacts__head-other {
     padding-left: 0;
     border: none;
+  }
+  .contacts__wrp {
+    padding-left: 20px;
+    border-left: 3px solid #4E5871;
   }
   .recomend__items {
     -webkit-box-orient: vertical;
@@ -1871,6 +1889,9 @@ a.donate__btn {
 .contacts__container {
     padding-left: 0;
   }
+  .contacts__head-other {
+    padding-left: 0;
+  }
   .header__slide-img {
     height: 315px;
   }
@@ -1879,6 +1900,7 @@ a.donate__btn {
     font-size: 24px;
   }
   .album__head,
+.albums__head,
 .fonograms__head {
     padding-left: 0;
   }
@@ -1915,6 +1937,9 @@ a.donate__btn {
   }
   .album__name {
     font-size: 22px;
+  }
+  .recomend__head {
+    padding-left: 0;
   }
   .recomend__album {
     height: 260px;

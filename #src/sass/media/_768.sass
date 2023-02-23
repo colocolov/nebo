@@ -72,9 +72,13 @@
     align-self: auto
   .header__slide-year
     color: $dark
+  .header-other
+    padding-bottom: 0
+  .header-other .menu__body._active
+    display: block
 
-  .socials
-    display: none
+  .socials-footer
+    display: flex
 
   .about.active .about__show,
   .contacts.active .contacts__show
@@ -86,17 +90,21 @@
   .about__info
     max-width: none
     padding-left: 20px
+
+  .album__btn-buy::after
+    display: none
+
   .contacts__info
     width: auto
-
-  .header-other
-    padding-bottom: 0
-  .header-other .menu__body._active
-    display: block
-
+    padding-left: 20px
+  .contacts__info-other
+    padding-left: 0
   .contacts__head-other
     padding-left: 0
     border: none
+  .contacts__wrp
+    padding-left: 20px
+    border-left: 3px solid $dark
 
   .recomend__items
     flex-direction: column
