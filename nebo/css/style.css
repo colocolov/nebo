@@ -866,7 +866,7 @@ a.donate__btn {
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: absolute;
-  padding: 30px;
+  padding: 30px 15px;
   top: 0;
   left: 50%;
   width: 550px;
@@ -1010,6 +1010,11 @@ a.donate__btn {
   -webkit-transform: translate(153px, -8px);
   -ms-transform: translate(153px, -8px);
   transform: translate(153px, -8px);
+}
+.album__btn-fono::after {
+  -webkit-transform: translate(58px, -9px);
+  -ms-transform: translate(58px, -9px);
+  transform: translate(58px, -9px);
 }
 .album__songs {
   width: 100%;
@@ -1380,9 +1385,11 @@ a.donate__btn {
   .album__container-get {
     padding-bottom: 100px;
   }
-  .contacts__container .accordeon__head,
-.contacts__head {
-    padding-left: 40px;
+  .contacts__container .accordeon__head {
+    padding-left: 0px;
+  }
+  .contacts__head {
+    padding-left: 0;
   }
 }
 @media (max-width: 1250px) {
@@ -1440,6 +1447,9 @@ a.donate__btn {
   .contacts__container .accordeon__head,
 .contacts__head {
     padding-left: 0;
+  }
+  .contacts__head-other {
+    padding-left: 20px;
   }
 }
 @media (max-width: 1150px) {

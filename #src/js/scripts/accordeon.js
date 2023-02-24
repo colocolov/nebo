@@ -17,15 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
       // const content = self.querySelector(".accordeon__decription");
 
       for (let i = 0, parent; (parent = accordeons[i]); i++) {
-        console.log(parent);
+        // console.log(parent);
         parent.classList.remove("active");
         parent.onclick = function (e) {
-          this.classList.toggle("active");
+            // console.log(e);
           // console.log(e.target.className + "--");
-          // if (e.target.className == "btn") {
+          if ((e.target.className == "accordeon__title") || (e.target.className == "btn") || (e.target.className == "accordeon__head")) {
+            this.classList.toggle("active");
           //   // alert(this.className);
-          //   // console.log(this);
-          // }
+          }
         };
       }
 
