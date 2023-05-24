@@ -429,9 +429,15 @@ a.donate__see::before {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 20%;
   flex: 1 0 20%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   margin-left: 25px;
 }
 .socials-footer {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   margin-left: 0;
 }
 
@@ -1421,6 +1427,9 @@ a.donate__btn {
   .header__container {
     padding-bottom: 70px;
   }
+  .header__link {
+    font-size: 60px;
+  }
   .albums__container,
 .fonograms__container {
     padding-left: 0;
@@ -1453,9 +1462,6 @@ a.donate__btn {
   }
 }
 @media (max-width: 1150px) {
-  .header__link {
-    font-size: 60px;
-  }
   .header__slide-album {
     left: 30px;
   }
@@ -1629,8 +1635,16 @@ a.donate__btn {
     margin-bottom: 5px;
     margin-top: 5px;
   }
+  .social__item:not(:first-child) {
+    margin-left: 20px;
+  }
   .socials-footer {
     margin-left: 0;
+  }
+}
+@media (max-width: 790px) {
+  .header__link {
+    font-size: 36px;
   }
 }
 @media (max-width: 768px) {
