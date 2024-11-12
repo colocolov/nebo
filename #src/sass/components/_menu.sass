@@ -8,7 +8,7 @@
       right: -100%
       width: 100%
       height: 100%
-      padding: 150px 30px 50px 70px
+      padding: 150px 30px 50px 30px
       background-color: rgba($text, 0.97)
       overflow: auto
       transition: right 0.5s ease 0s
@@ -41,6 +41,7 @@
       height: auto
       margin-bottom: 50px
 
+
   &__item
     position: relative
     // @include fl-all
@@ -54,9 +55,11 @@
     transition: all 0.3s ease-in-out
     // transform: rotate(180deg)
     writing-mode: vertical-lr
-    padding: 30px 39px 0
+
     border-right: 2px solid $dark
     height: 100%
+    a
+      padding: 30px 39px 0
     &:last-child
       border-left: 2px solid $dark
     @media (max-width: 768px)
@@ -69,6 +72,8 @@
       flex-direction: row
       height: auto
       color: $bgc
+      a
+        padding: 0
       &:last-child
         border-left: none
       &:not(:last-child)

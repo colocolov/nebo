@@ -5,7 +5,10 @@
     & .accordeon__title
       padding-right: 65px
   &__show
-    display: none
+    max-height: 0
+    opacity: 0
+    overflow: hidden
+    transition: max-height 0.3s ease, opacity 0.3s ease
     padding-left: 65px
     &:not(:last-child)
       border-bottom: 3px solid $dark
@@ -19,3 +22,5 @@
 
 .fonograms.active .fonograms__show
   display: flex
+  opacity: 1
+  max-height: none

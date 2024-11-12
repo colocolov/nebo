@@ -15,11 +15,15 @@ a.donate__btn
   color: $bgc
   width: 100%
   text-align: center
+
 .donate__btn
   &-select
     // height: 0
-    display: none
-    transition: all 0.5s ease
+    max-height: 0
+    opacity: 0
+    overflow: hidden
+    transition: max-height 0.2s ease, opacity 0.3s ease-out
+    // transition: all 0.5s ease
     // opacity: 0
     // visibility: hidden
     &._active
@@ -31,8 +35,11 @@ a.donate__btn
       padding: 30px 15px
       top: 0
       left: 50%
+      bottom: 0
       // content: ''
       width: 550px
+      max-height: none
+      opacity: 1
       height: auto
       border: 2px solid $dark
       border-radius: 10px

@@ -1,7 +1,9 @@
 .about
   &__show
-    display: none
-    // transition: all 0.3s linear
+    max-height: 0
+    opacity: 0
+    overflow: hidden
+    transition: max-height 0.3s ease, opacity 0.3s ease
   &__head
     padding-top: 35px
   &__info
@@ -17,3 +19,5 @@
   position: relative
   display: flex
   justify-content: space-between
+  opacity: 1
+  max-height: none

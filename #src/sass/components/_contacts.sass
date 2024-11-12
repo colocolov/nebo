@@ -1,6 +1,9 @@
 .contacts
   &__show
-    display: none
+    max-height: 0
+    opacity: 0
+    overflow: hidden
+    transition: max-height 0.3s ease, opacity 0.3s ease
     // transition: all 0.3s linear
   &__head
     padding-top: 35px
@@ -32,3 +35,5 @@
   position: relative
   display: flex
   justify-content: space-between
+  opacity: 1
+  max-height: none

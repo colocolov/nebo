@@ -25,6 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
           if ((e.target.className == "accordeon__title") || (e.target.className == "btn") || (e.target.className == "accordeon__head")) {
             this.classList.toggle("active");
           //   // alert(this.className);
+            if (this.classList.contains('active')) {
+              // секция всегда начинается с верха экрана
+              this.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
           }
         };
       }
